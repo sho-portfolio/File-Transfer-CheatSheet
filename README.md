@@ -4,7 +4,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 | From                   | To                     | Command
 | ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- 
 | Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```    
-| Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```                                                                                                               
+| Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/> [or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                                                                                                              
 | Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```                                            
 | Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                    
 | Local Machine          | Githib                 | tbd
@@ -19,3 +19,5 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 
 # Notes
 * Mac OS does not come with wget installed.  To install wget run the following command in Terminal: ```brew install wget```
+* To install git on a machine (local or virtual) run the following command in terminal: ```sudo apt update
+sudo apt install git```
