@@ -1,20 +1,20 @@
 # File-Transfer-CheatSheet
 How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/Google-Compute-Engine and GitHub
 
-| Ref | From                   | To                     | Command
-| --- | ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- 
-| A1  | Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```    
-| B1  | Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```                                                                                                               
-| B2  | Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```                                            
-| B3  | Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                    
-| C1  | Local Machine          | Githib                 | tbd
-| C2  | Local Machine          | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```
-| C3  | Local Machine          | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```
-| D1  | Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt``` 
-| D2  | Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://my-awesome-bucket/file1.png foldername/file1.png```
-| E1  | Google Virtual Machine | Github                 | tbd
-| E2  | Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge``` <br/> [then] ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt```
-| E3  | Google Virtual Machine | Google Storage Bucket  | ```gcloud compute scp dataTest.txt instance-sho:~```
+| From                   | To                     | Command
+| ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- 
+| Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```    
+| Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```                                                                                                               
+| Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```                                            
+| Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                    
+| Local Machine          | Githib                 | tbd
+| Local Machine          | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```
+| Local Machine          | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```
+| Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt``` 
+| Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://my-awesome-bucket/file1.png foldername/file1.png```
+| Google Virtual Machine | Github                 | tbd
+| Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge``` <br/> [then] ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt```
+| Google Virtual Machine | Google Storage Bucket  | ```gcloud compute scp dataTest.txt instance-sho:~```
 
 
 # Notes
