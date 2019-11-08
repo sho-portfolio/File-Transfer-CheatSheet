@@ -3,7 +3,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 
 | Ref | From                   | To                     | Command
 | --- | ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- 
-| A1  | Internet               | Local Machine          | wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt    
+| A1  | Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```    
 | B1  | Github                 | Local Machine          | (A1)                                                                                                               
 | B2  | Github                 | Google Storage Bucket  | (A1) <br/>[then] gsutil cp downloads/dataTest.txt gs://stack-overflow-huge                                            
 | B3  | Github                 | Google Virtual Machine | (A1) <br/>[or] git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git                    
@@ -18,5 +18,4 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 
 
 # Notes
-* Mac OS does not come with wget installed.  To install wget run the following command in Terminal:
-*  ```brew install wget```
+* Mac OS does not come with wget installed.  To install wget run the following command in Terminal: ```brew install wget```
