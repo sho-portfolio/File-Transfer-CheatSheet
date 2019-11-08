@@ -17,3 +17,6 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 | E3  | Google Virtual Machine | Google Storage Bucket  | gcloud compute scp dataTest.txt instance-sho:~
 
 
+# Notes
+* Mac OS does not come with wget installed.  To install wget run the following command in Terminal:
+*  ```brew install wget```
