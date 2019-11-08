@@ -19,5 +19,5 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 
 # Notes
 * Mac OS does not come with wget installed.  To install wget run the following command in Terminal: ```brew install wget```
-* To install git on a machine (local or virtual) run the following command in terminal: ```sudo apt update
-sudo apt install git```
+* To install git on a machine (local or virtual) run the following commands in terminal: ```sudo apt update``` then 
+```sudo apt install git```
