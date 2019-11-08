@@ -13,7 +13,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 | D1  | Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt``` 
 | D2  | Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://my-awesome-bucket/file1.png foldername/file1.png```
 | E1  | Google Virtual Machine | Github                 | tbd
-| E2  | Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge``` <br/> [then] (D1)
+| E2  | Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge``` <br/> [then] ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt```
 | E3  | Google Virtual Machine | Google Storage Bucket  | ```gcloud compute scp dataTest.txt instance-sho:~```
 
 
