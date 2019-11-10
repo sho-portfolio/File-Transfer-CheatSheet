@@ -3,17 +3,17 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 
 | From                   | To                     | Command
 | ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------- 
-| Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt```    
-| Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/> [or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                                                                                                              
-| Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```                                            
-| Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```                    
+| Internet               | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt```    
+| Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/> [or] ```git clone https://github.com/sho-portfolio/sample-repo.git```                                                                                                              
+| Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://bucket-sho```                                            
+| Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/sample-repo.git```                    
 | Local Machine          | Githib                 | #todo
-| Local Machine          | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge```
-| Local Machine          | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/MachineLearning-MultiClassClassifier/master/dataTest.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/MachineLearning-MultiClassClassifier.git```
-| Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt``` 
-| Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://my-awesome-bucket/file1.png foldername/file1.png```
+| Local Machine          | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://bucket-sho```
+| Local Machine          | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/sample-repo.git```
+| Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket-sho/myfile.txt foldername/fileA.txt``` 
+| Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://bucket-sho/myfile.txt foldername/fileA.txt```
 | Google Virtual Machine | Github                 | #todo
-| Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://stack-overflow-huge``` <br/> [then] ```gsutil cp gs://bucket_20191022_machine-learning-data/testDataHsbc.txt downloads/dataTestA.txt```
+| Google Virtual Machine | Local Machine          | ```gsutil cp downloads/dataTest.txt gs://bucket-sho``` <br/> [then] ```gsutil cp gs://bucket-sho/dataTest.txt foldername/fileA.txt```
 | Google Virtual Machine | Google Storage Bucket  | ```gcloud compute scp dataTest.txt instance-sho:~```
 
 
