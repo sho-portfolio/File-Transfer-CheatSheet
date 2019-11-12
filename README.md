@@ -8,7 +8,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 | Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://bucket-sho```                                            
 | Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/sample-repo.git```                    
 | Local Machine          | Githib                 | #todo
-| Local Machine          | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://bucket-sho```
+| Local Machine          | Google Storage Bucket  | ```gsutil cp downloads/dataTest.txt gs://bucket-sho```
 | Local Machine          | Google Virtual Machine | ```gcloud compute scp dataTest.txt instance-sho:~```
 | Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket-sho/myfile.txt foldername/fileA.txt``` 
 | Google Storage Bucket  | Google Virtual Machine | ```gsutil cp gs://bucket-sho/myfile.txt foldername/fileA.txt```
