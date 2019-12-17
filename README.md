@@ -7,7 +7,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 | Github                 | Local Machine          | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/> [or] ```git clone https://github.com/sho-portfolio/sample-repo.git```                                                                                                              
 | Github                 | Google Storage Bucket  | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[then] ```gsutil cp downloads/dataTest.txt gs://bucket-sho```                                            
 | Github                 | Google Virtual Machine | ```wget https://raw.githubusercontent.com/sho-portfolio/sample-repo/master/fileA.txt``` <br/>[or] ```git clone https://github.com/sho-portfolio/sample-repo.git```                    
-| Local Machine          | Githib                 | 1) ```cd your-project-directory``` <br/>2) ```git init``` <br/>3) ```git add . or git add ['filename']``` <br/>4) ```git commit -m "your comment"``` <br/> 5) ```git remote add origin https://github.com/yourusername/your-repo-name.git```<br/>6) ```git push origin master```
+| Local Machine          | Githib                 | 1) ```cd your-project-directory``` <br/>2) ```git init``` <br/>3) ```git add . or git add ['filename']``` <br/>4) ```git commit -m "your comment"``` <br/> 5) ```git remote add origin https://github.com/yourusername/your-repo-name.git```<br/>6) ```git push origin master```<br/> see #1 below
 | Local Machine          | Google Storage Bucket  | ```gsutil cp downloads/dataTest.txt gs://bucket-sho```
 | Local Machine          | Google Virtual Machine | ```gcloud compute scp dataTest.txt instance-sho:~```
 | Google Storage Bucket  | Local Machine          | ```gsutil cp gs://bucket-sho/myfile.txt foldername/fileA.txt``` 
@@ -22,3 +22,10 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 * To install git on a machine (local or virtual) run the following commands in Terminal: ```sudo apt update``` then 
 ```sudo apt install git```
 * useful tutorial for copying fr=iles from and to github
+#1 if you are getting errors when trying to ```git push master origin``` try these commands in the terminal
+```git fetch origin master```
+```git merge origin master```
+```git fetch origin master:tmp```
+```git rebase tmp```
+```git push origin HEAD:master```
+```git branch -D tmp```
