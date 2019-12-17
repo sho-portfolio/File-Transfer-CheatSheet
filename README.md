@@ -29,6 +29,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 <br/> ```git clone https://github.com/sho-portfolio/sql-cheatsheet.git``` (you can get this by going to your repo and clicking the green 'clone or download' button and copying the link
 <br/> make changes to existing files or add new ones
 <br/> ```git status``` this will show you any changes made
+<br/> ```cd <folder name>``` (if you dont do this then you'll add everything in the current dir for the next command)
 <br/> ```git add --all``` (or git add <filename>)
 <br/> ```git commit -m "commit comment goes here..."```
 <br/> ```git commit```
