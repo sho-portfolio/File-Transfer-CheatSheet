@@ -23,9 +23,11 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 ```sudo apt install git```
 * useful tutorial for copying fr=iles from and to github
 * #1 if you are getting errors when trying to ```git push master origin``` try these commands in the terminal
-```git fetch origin master```
-```git merge origin master```
-```git fetch origin master:tmp```
-```git rebase tmp```
-```git push origin HEAD:master```
-```git branch -D tmp```
+<br/>[https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first]
+<br/>```git fetch origin master```
+<br/>```git merge origin master```
+<br/>```git fetch origin master:tmp```
+<br/>```git rebase tmp```
+<br/>```git push origin HEAD:master```
+<br/>```git branch -D tmp```
+<br/>```git push origin master```
