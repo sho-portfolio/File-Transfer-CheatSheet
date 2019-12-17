@@ -22,7 +22,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 * To install git on a machine (local or virtual) run the following commands in Terminal: ```sudo apt update``` then 
 ```sudo apt install git```
 * useful tutorial for copying fr=iles from and to github
-#1 if you are getting errors when trying to ```git push master origin``` try these commands in the terminal
+* #1 if you are getting errors when trying to ```git push master origin``` try these commands in the terminal
 ```git fetch origin master```
 ```git merge origin master```
 ```git fetch origin master:tmp```
