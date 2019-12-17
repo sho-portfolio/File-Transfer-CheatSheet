@@ -24,7 +24,7 @@ How to transfer files between Google-Storage-Buckets, Local-Machine, Google-VM/G
 * useful tutorial for copying fr=iles from and to github
 * #0 a much easier way to upload files
 <br/>[https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/]
-<br/> ```cd <folder you want to d/l your repo to>
+<br/> ```cd <folder you want to d/l your repo to>```
 <br/> ```git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY```
 <br/> ```git clone https://github.com/sho-portfolio/sql-cheatsheet.git```
 <br/> make changes to existing files or add new ones
